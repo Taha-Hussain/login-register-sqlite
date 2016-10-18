@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.abc.proquest.MainActivity"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <EditText
+       android:hint="Username"
+       android:layout_marginTop="300px"
+       android:layout_marginLeft="20px"
+       android:layout_marginRight="20px"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/userName_EditText"/>
+    <EditText
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_EditText"
+        />
+
+    <RadioGroup
+        android:id="@+id/userType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/userTypeAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"/>
+        <RadioButton
+            android:id="@+id/userTypeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+    <TextView
+        android:onClick="registerClick"
+        android:textAlignment="center"
+        android:textSize="30px"
+        android:text="Register Account"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="50px"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginResult"/>
+</LinearLayout>
